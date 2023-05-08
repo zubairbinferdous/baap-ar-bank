@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-3xl text-center p-[40px] bg-gray-700 text-white uppercase">welcomem To<span class="text-red-600"> bapp ar bank</span> 
+        </h1>
+    </header>
+    <main>
+        <!-- amount - area  -->
+        <section class="m-5">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-600 p-9  rounded">
+                    <h1 class="text-5xl uppercase">diposit</h1>
+                    <h2 class="text-4xl py-5 font-black  text-white">$<span id="deposit-amount">00</span></h2>
+                </div>
+                <div class="bg-red-500 p-9 rounded">
+                    <h1 class="text-5xl uppercase">withdraw</h1>
+                    <h2 class="text-4xl py-5 font-black text-white">$<span id="withdraw-amount">00</span></h2>
+                </div>
+                <div class="bg-blue-500 p-9 rounded">
+                    <h1 class="text-5xl uppercase">Account</h1>
+                    <h2 class="text-4xl py-5 font-black text-white">$<span id="total-amount">00</span></h2>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- add amount  -->
+
+        <section class="m-5">
+            <div class=" grid grid-cols-2 gap-4 w-9/12  mx-auto">
+
+                <div class="bg-green-600 text-white bg-indigo-500 p-[40px]">
+                    <h2 class="uppercase text-3xl">Deposit</h2>
+                    
+                    <input type="text" class="text-black w-9/12 p-[5px] font-black text-2xl mt-9 block" id="deposit" placeholder="inter you amount ">
+
+                    <button class="uppercase rounded-full bg-red-500 hover:bg-green-700 text-white px-5 py-4 mt-9" id="add-deposit">enter amount</button>
+                </div>
+
+                <div class="bg-green-600 text-white bg-indigo-500 p-[40px]">
+                    <h2 class="uppercase text-3xl">withdraw</h2>
+
+                    <input type="text" class="text-black w-9/12 p-[5px] font-black text-2xl mt-9 block" id="withdraw" placeholder="inter you amount ">
+
+                    <button class="uppercase rounded-full bg-red-500 hover:bg-green-700 text-white px-5 py-4 mt-9" id="add-withdraw">enter amount</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="deposit.js"></script>
+</body>
+</html>
